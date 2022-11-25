@@ -9,13 +9,15 @@ public class Main {
         System.out.println("book.yearPublishing = " + book.getYearPublishing());
         book.setYearPublishing(1877);
         System.out.println("book.getAvtor() = " + book.getAvtor());
-        Book book2 = new Book("Oz country", "L.Frank Baum", 1910);
+        System.out.println(+book.getYearPublishing());
 
+        Book book2 = new Book("Oz country", "L.Frank Baum", 1910);
+        System.out.println("book2.nameBook = " + book2.getNameBook());
         //Автор//
         System.out.println("Задание Автор");
-        Author turgenev = Author.Author("Ivan ", "Turgenev ") ;
-        System.out.println("turgenev.nameAuthor = " + turgenev.nameAuthor);
-        System.out.println("turgenev.surnameAuthor = " + turgenev.surnameAuthor);
+        Author turgenev = new Author("Ivan ", "Turgenev ") ;
+        System.out.println("turgenev.nameAuthor = " + turgenev.getNameAuthor());
+        System.out.println("turgenev.surnameAuthor = " + turgenev.getSurnameAuthor());
 
 
     }
