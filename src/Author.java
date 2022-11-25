@@ -1,11 +1,18 @@
 public class Author {
-    String nameAuthor;
-    String surnameAuthor;
-    public static Author Author(String nameAuthor, String surnameAuthor) {
-        Author author = new Author();
-        author.nameAuthor = nameAuthor;
-        author.surnameAuthor = surnameAuthor;
-        return author;
+    private final String nameAuthor;
+    private String nameAuthorPublishing;
+    private String surnameAuthor;
+    public  Author (String nameAuthor, String surnameAuthor) {
+
+        this.nameAuthor = nameAuthor;
+        this.surnameAuthor = surnameAuthor;
+
     }
+        public String getNameAuthor () {
+            return this.nameAuthor;
+        }
+        public String getSurnameAuthor () {
+            return this.surnameAuthor;
+        }
 
 }
